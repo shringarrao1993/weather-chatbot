@@ -33,8 +33,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
-    height: 500px;
+    width: 420px;
+    height: 700px;
     max-height: 600px;
     z-index: 2;
     overflow: hidden;
@@ -61,7 +61,7 @@
     font-weight: normal;
     font-size: 15px;
     margin: 0;
-    padding-left: 32.5%;
+    padding-left: 32%;
     letter-spacing: 2px;
   }
   .chat-title h2 {
@@ -85,7 +85,7 @@
   .chat-title .avatar img {
     width: 100%;
     height: auto;
-
+  
   }
   /*--------------------
    Messages
@@ -144,12 +144,30 @@
     padding: 0;
     border: 2px solid rgba(255, 255, 255, 0.24);
   }
+  .messages .message.message-personal .avatar1 {
+    position: absolute;
+    z-index: 1;
+    bottom: -15px;
+    right: -35px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+  }
   .messages .message .avatar img {
+    width: 100%;
+    height: auto;
+  }
+  .messages .message .avatar1 img {
     width: 100%;
     height: auto;
   }
   .messages .message.message-personal {
     float: right;
+    margin-right: 30px;
     color: #fff;
     text-align: right;
     background: linear-gradient(120deg, #248a52, #257287);
